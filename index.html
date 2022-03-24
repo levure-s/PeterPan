@@ -254,6 +254,9 @@
                   var target = $(href == "#" || href == "" ? 'html' : href);
                   var position = target.offset().top;
                   $('body,html').animate({scrollTop:position}, speed, 'swing');
+                  if($('.anchor').hasClass('enable')){
+                    $('.anchor').removeClass('enable')
+                  }
                   return false;
                });
             });

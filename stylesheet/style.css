@@ -6,6 +6,9 @@
 a{
     text-decoration: none;
 }
+a:hover{
+    opacity: 0.8;
+}
 
 p{
     font-family: serif;
@@ -316,6 +319,11 @@ footer p{
 
 #item .padding3em{
     background-color: #fff;
+}
+@media (min-width:671px){
+    header,body,footer{
+        min-width: 850px;
+    }
 }
 
 @media (max-width:670px){
